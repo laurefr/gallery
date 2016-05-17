@@ -1,26 +1,23 @@
 var modal= document.getElementById('MyModal');
-var img=document.getElementById("MyImg");
-var modalImg=document.getElementById("img_01");
-//var captionText=document.getElementById("caption");
+var span = document.getElementsByName("close")[0];
+var images=document.getElementById("img");
+var modalImg=document.getElementById("img01");
 
-img.onclick= function()
+span.onclick= function()
 {
-    modal.style.display = "block";
-    modalImg.src=this.src;
-    modalImg.alt=this.alt;
-    //captionText.innerHTML=this.alt;
+    
+modal.style.display = "none";
 }
 
-var span = document.getElementsByClassName("close")[0];
-span.onclick = function ()
-{
-    modal.style.display = "none";
-}
 
-// Create 2 hover function for 
-function hover(element) {
-    element.setAttribute('src', "Picture/paris.jpg");
-}
-function unhover(element) {
-    element.setAttribute('src', "Picture/london.jpg");
-}
+var i ;
+for (i = 0; i <images.length; i++)
+    {
+     images[i].onclick=function()
+     {
+         modal.style.display="block";
+         modalImg.src =this.src;
+         modalImg.alt=this.alt;
+         
+     }
+     }

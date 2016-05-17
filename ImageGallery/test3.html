@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <body></body>
+ <div class="img">
+        <img src="Picture/sky.jpg" alt="sky" width="300" height="200">
+    </div>
+    </div>
+    </body>
+<script>
+    var newsrc = "rock.jpg";
+function changeImage() {
+  if ( newsrc == "rock.jpg" ) {
+    document.images["pic"].src = "Picture/rock.jpg";
+    document.images["pic"].alt = "rock.";
+    newsrc  = "earth.jpg";
+  }
+  else {
+    document.images["pic"].src = "Picture/sky.jpg";
+    document.images["pic"].alt = "Earth";
+    newsrc  = "rock.jpg";
+  }
+}
+    </script>

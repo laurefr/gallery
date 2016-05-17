@@ -1,0 +1,18 @@
+
+.square
+{
+    width:200px;
+    height:200px;
+    background-color:#ffff00;
+	border-radius: 15px 50px 30px 5px;
+	position: float;
+    margin: auto;
+	
+}
+.sq2
+{
+  width:200px;
+  height:200px;
+  background-color:#e6e6e6;
+  border-radius: 15px 50px 30px 5px;
+
